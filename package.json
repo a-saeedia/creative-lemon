@@ -1,0 +1,42 @@
+{
+  "name": "creative-lemon",
+  "version": "1.0.0",
+  "description": "The Creative Lemon — an MCP server that gives AI agents eyes for creating. 2026 web-design trends, scroll-motion code recipes, design principles, palettes, type systems, section skeletons and honest critique.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "creative-lemon": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "web-design",
+    "animation",
+    "scroll-driven",
+    "gsap",
+    "awwwards",
+    "design-system",
+    "opencode",
+    "claude",
+    "creative"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
